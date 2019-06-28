@@ -1,5 +1,6 @@
-sudo apt install curl
-apt install git
+sudo ./apt-install
+
+sudo gsettings set org.gnome.settings-daemon.peripherals.keyboard numlock-state 'on'
 
 cd bashrc
 chmod 744 config.sh
