@@ -1,8 +1,7 @@
 #!/bin/bash
 
 echo "Configuring oh my zsh"
-sudo apt install curl
-sudo apt install zsh
+sudo apt install zsh -y
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 echo "Installing spaceship"
