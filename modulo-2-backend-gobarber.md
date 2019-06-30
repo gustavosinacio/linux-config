@@ -121,3 +121,8 @@
 
     * Holds info about what the end user will see. Not existent in REST APIs
 
+# JWT -> Json Web Token -> User authentication
+
+Estrutura:
+
+    Headers.Payload.Assinatura
