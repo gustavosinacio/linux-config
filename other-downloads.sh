@@ -11,3 +11,10 @@ fc-cache -f -v
 rm -r fira
 
 rm *FiraCode*
+
+sudo apt install libxss1 libappindicator1 libindicator7 -y
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt install ./google-chrome*.deb
+sudo apt install -f.
+rm ./google-chrome*.deb
+

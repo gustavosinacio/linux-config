@@ -1,4 +1,4 @@
-sudo ./apt-install
+./apt-install
 
 sudo gsettings set org.gnome.settings-daemon.peripherals.keyboard numlock-state 'on'
 
@@ -25,5 +25,6 @@ cd ..
 cd zsh
 chmod 744 config.sh
 ./config.sh
+./after-config.sh
 cd ..
 

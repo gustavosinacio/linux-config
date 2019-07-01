@@ -2,7 +2,7 @@
 
 cp ~/.zshrc ~/.zshrc.backup
 
-sed -i -e 's/="robbyrussell"/="spaceship"/g' ~/.zshrc
+# sed -i -e 's/="robbyrussell"/="spaceship"/g' ~/.zshrc
 
 echo '
 SPACESHIP_PROMPT_ORDER=(
@@ -26,4 +26,5 @@ SPACESHIP_CHAR_SUFFIX=" "
 zplugin light zsh-users/zsh-autosuggestions
 zplugin light zsh-users/zsh-completions
 zplugin light zdharma/fast-syntax-highlighting
+
 ' >> ~/.zshrc
