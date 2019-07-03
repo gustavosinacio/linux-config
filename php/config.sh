@@ -1,0 +1,1 @@
+sudo apt install -y php php-pgsql libapache2-mod-php php-xml php-mbstring 
