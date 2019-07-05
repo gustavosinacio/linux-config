@@ -9,5 +9,6 @@ transmission \
 gparted \
 apache2 \
 net-tools \
+tracerout \
 
 snap install spotify
