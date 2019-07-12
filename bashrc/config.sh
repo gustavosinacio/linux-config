@@ -10,19 +10,19 @@ targetAliases=~/.bash_aliases
 if [ -e $target ]
 then
   echo "$target found. Deleting file..."
-  sudo rm $target
+  rm $target
 else 
   echo "$target not found."
 fi
 echo "Creating link between $file and $target"
-sudo ln $file $target
+  ln $file $target
 
 if [ -e $targetAliases ]
 then
   echo "$targetAliases found. Deleting file..."
-  sudo rm $targetAliases
+  rm $targetAliases
 else 
   echo "$targetAliases not found."
 fi
 echo "Creating link between $aliasesFile and $targetAliases"
-sudo ln $aliasesFile $targetAliases
+ ln $aliasesFile $targetAliases
