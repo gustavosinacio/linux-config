@@ -11,3 +11,6 @@ alias gdoc='cd /var/www/html/doutorhj-administrativo/'
 alias y='yes | '
 alias ds='dropbox status'
 alias gdoc='cd /var/www/html/doutorhj-administrativo'
+alias gits='git status'
+alias gitaa='git add .'
+
