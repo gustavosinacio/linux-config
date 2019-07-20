@@ -1,5 +1,5 @@
 alias python='python3'
-alias r='ranger'
+alias rgr='ranger'
 alias oo='off_display'
 alias c='calcurse'
 alias y='yes | '
