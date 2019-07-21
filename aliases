@@ -3,4 +3,4 @@ alias rgr='ranger'
 alias oo='off_display'
 alias c='calcurse'
 alias y='yes | '
-
+alias cfr='vim $HOME/.config/ranger/rc.conf'
