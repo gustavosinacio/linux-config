@@ -1,0 +1,15 @@
+#!/bin/bash
+
+CONFIG="$HOME/github/linux-config"
+
+cd $CONFIG
+
+git pull
+
+./zsh/update
+
+./ranger/update
+
+./profile/update
+
+./vim/update

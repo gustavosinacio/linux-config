@@ -1,0 +1,6 @@
+#!/bin/bash
+
+[ -f $HOME/.vimrc ] && rm $HOME/.vimrc && echo 'Removing existing .vimrc'
+
+ln -s $HOME/github/linux-config/vim/vimrc $HOME/.vimrc && echo 'Linking new .vimrc'
+

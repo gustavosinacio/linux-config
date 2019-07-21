@@ -1,0 +1,6 @@
+#!/bin/bash
+
+[ -f $HOME/.profile ] && rm $HOME/.profile && echo 'Removing existing .profile'
+
+ln -s $HOME/github/linux-config/profile/profile $HOME/.profile && echo 'Linking new .profile'
+
