@@ -108,9 +108,5 @@ zplugin light zsh-users/zsh-autosuggestions
 zplugin light zsh-users/zsh-completions
 zplugin light zdharma/fast-syntax-highlighting
 
-#if [ -f ~/github/linux-config/aliases ]; then
-#  echo test
-#  . ~/github/linux-config/aliases
-#fi
-
 [ -f ~/github/linux-config/aliases ] && . ~/github/linux-config/aliases && echo "Aliases loaded ~~~"
+
