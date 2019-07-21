@@ -110,4 +110,3 @@ zplugin light zdharma/fast-syntax-highlighting
 
 [ -f ~/github/linux-config/aliases ] && . ~/github/linux-config/aliases
 
-echo "Running from $HOME"
