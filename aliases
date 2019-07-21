@@ -1,6 +1,6 @@
 alias python='python3'
 alias rgr='ranger'
-alias oo='off_display'
+alias oo='xset dpms force off #Turn off the screen'
 alias c='calcurse'
 alias y='yes | '
 alias cfr='vim $HOME/.config/ranger/rc.conf'
