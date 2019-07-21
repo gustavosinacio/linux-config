@@ -10,5 +10,6 @@ gparted \
 apache2 \
 net-tools \
 tracerout \
+calcurse \
 
 snap install spotify
