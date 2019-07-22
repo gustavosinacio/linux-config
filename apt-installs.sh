@@ -1,4 +1,6 @@
-sudo apt install -y \
+install="apt install -y"
+
+$install \
 curl \
 git \
 terminator \
@@ -9,7 +11,9 @@ transmission \
 gparted \
 apache2 \
 net-tools \
-tracerout \
 calcurse \
+samba \
+cifs-utils \
+inetutils-traceroute \
 
-snap install spotify
+# snap install spotify
