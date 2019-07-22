@@ -19,8 +19,5 @@ if [ -n "$BASH_VERSION" ]; then
 fi
 
 # set PATH so it includes user's private bin directories
-PATH="$HOME/Dropbox/Programming/Pythons/logpy:$PATH"
-PATH="$HOME/Dropbox/Programming/bash:$PATH"
-PATH="$HOME/Dropbox/Programming/bash/indicator-sysmonitor:$PATH"
 PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 PATH="$HOME/github/linux-config:$PATH"
