@@ -4,3 +4,5 @@ apt install -y \
 sslstrip \
 ettercap-text-only
 
+apt install -y openssh-client
+apt install -y openssh-server
