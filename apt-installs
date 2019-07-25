@@ -15,5 +15,6 @@ $install calcurse
 $install samba
 $install cifs-utils
 $install inetutils-traceroute
+$install openssh-client openssh-server
 
 # snap install spotify
