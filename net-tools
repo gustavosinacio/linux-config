@@ -2,7 +2,8 @@
 
 apt install -y \
 sslstrip \
-ettercap-text-only
+ettercap-text-only \
+dsniff
 
 apt install -y openssh-client
 apt install -y openssh-server
