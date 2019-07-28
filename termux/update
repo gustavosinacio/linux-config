@@ -1,3 +1,5 @@
 #!/bin/bash
 
+rm ~/.termux/termux.properties
+
 ln -s ~/github/linux-config/termux/termux.properties ~/.termux/termux.properties
