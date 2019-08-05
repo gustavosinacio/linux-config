@@ -11,3 +11,4 @@ alias update-all='. ~/github/linux-config/update-all'
 # config files
 alias cfr='vim $HOME/.config/ranger/rc.conf'
 alias cft='vim $HOME/github/linux-config/termux/termux.properties'
+alias cfv='vim $HOME/github/linux-config/vim/vimrc'
