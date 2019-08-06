@@ -1,6 +1,7 @@
 install="apt install -y"
 
 # $install \
+$install zsh
 $install curl
 $install git
 $install terminator
@@ -16,5 +17,11 @@ $install samba
 $install cifs-utils
 $install inetutils-traceroute
 $install openssh-client openssh-server
+$install vim
+$install ranger
+
+echo '-----------------------------------------------------------------------------------'
+echo 'opening put-windows web-page https://extensions.gnome.org/extension/39/put-windows/'
+echo '-----------------------------------------------------------------------------------'
 
 # snap install spotify
