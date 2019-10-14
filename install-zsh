@@ -17,3 +17,5 @@ cloneCmdRun=$($cloneCmd)
 
 lnCmd="ln -s \"$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme\" \"$ZSH_CUSTOM/themes/spaceship.zsh-theme\""
 lnCmdRun=$($lnCmd)
+
+echo "done -------------------------------------------------"
