@@ -1,0 +1,19 @@
+#!/bin/bash
+
+echo "install zsh"
+
+sudo apt install zsh
+
+echo "install oh-my-zsh------------------------------------"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+echo "install zplugin--------------------------------------"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zplugin/master/doc/install.sh)"
+
+echo "install spaceship theme------------------------------"
+
+cloneCmd="git clone https://github.com/denysdovhan/spaceship-prompt.git \"$ZSH_CUSTOM/themes/spaceship-prompt\""
+cloneCmdRun=$($cloneCmd)
+
+lnCmd="ln -s \"$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme\" \"$ZSH_CUSTOM/themes/spaceship.zsh-theme\""
+lnCmdRun=$($lnCmd)
