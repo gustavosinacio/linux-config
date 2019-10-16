@@ -135,5 +135,7 @@ SPACESHIP_CHAR_SUFFIX=" "
 # SETING VARIABLES ---------------------------------
 export git=$HOME/github
 export GIT=$HOME/github
-
 # ----
+
+source ~/.profile
+
