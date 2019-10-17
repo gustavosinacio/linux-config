@@ -137,5 +137,5 @@ export git=$HOME/github
 export GIT=$HOME/github
 # ----
 
-source ~/.profile
+[ -f ~/.profile ] && source ~/.profile
 
