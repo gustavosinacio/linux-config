@@ -1,0 +1,9 @@
+#!/bin/bash
+
+desktop=$(env | grep XDG_CURRENT_DESKTOP | cut -d '=' -f 2)
+
+echo $desktop
+
+if [ $desktop == 'GNOME' ]; then 
+  echo 'WORK'
+fi
