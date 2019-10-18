@@ -1,16 +1,19 @@
 #!/bin/bash
 
-gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings \
-"[\
-'/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/',\
-'/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/',\
-'/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/',\
-'/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/' \
-]"
 
 desktop=$(env | grep XDG_CURRENT_DESKTOP | cut -d '=' -f 2)
 
 if [ $desktop == 'GNOME' ]; then
+
+  gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings \
+  "[\
+  '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/',\
+  '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/',\
+  '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/',\
+  '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/' \
+  ]"
+
+
   echo "You are on $desktop"
 
   echo "Setting shortcuts"
