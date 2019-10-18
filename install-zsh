@@ -12,10 +12,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zplugin/master/doc
 
 echo "install spaceship theme------------------------------"
 
-cloneCmd="git clone https://github.com/denysdovhan/spaceship-prompt.git \"$ZSH_CUSTOM/themes/spaceship-prompt\""
-cloneCmdRun=$($cloneCmd)
-
-lnCmd="ln -s \"$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme\" \"$ZSH_CUSTOM/themes/spaceship.zsh-theme\""
-lnCmdRun=$($lnCmd)
+git clone https://github.com/denysdovhan/spaceship-prompt.git $ZSH_CUSTOM/themes/spaceship-prompt
+ln -s $ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme $ZSH_CUSTOM/themes/spaceship.zsh-theme
 
 echo "done -------------------------------------------------"
