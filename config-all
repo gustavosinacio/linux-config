@@ -1,7 +1,7 @@
 ./set-keyboard-shortcuts
 ./basic-configs
 ./net-tools
-./install-zsh
 sudo ./apt-installs
 ./other-downloads
 ./update-all
+./install-zsh

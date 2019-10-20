@@ -3,7 +3,6 @@ install="apt install -y"
 # $install \
 
 $install nmap
-$install zsh
 $install curl
 $install git
 $install terminator
