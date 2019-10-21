@@ -3,7 +3,6 @@ install="apt install -y"
 # $install \
 
 $install nmap
-$install zsh
 $install curl
 $install git
 $install terminator
@@ -16,6 +15,7 @@ $install apache2
 $install net-tools
 $install calcurse
 $install samba
+$install smbclient
 $install cifs-utils
 $install inetutils-traceroute
 $install openssh-client openssh-server

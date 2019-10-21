@@ -4,7 +4,7 @@ CONFIG="$HOME/github/linux-config"
 
 cd $CONFIG
 
-git pull
+sudo git pull
 
 ./zsh/update
 

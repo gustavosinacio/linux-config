@@ -1,9 +1,8 @@
 #!/bin/bash
 
-apt install -y \
+sudo apt install -y \
 sslstrip \
 ettercap-text-only \
-dsniff
-
-apt install -y openssh-client
-apt install -y openssh-server
+dsniff \
+openssh-client \
+openssh-server 
