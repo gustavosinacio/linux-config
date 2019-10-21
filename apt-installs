@@ -21,6 +21,7 @@ $install inetutils-traceroute
 $install openssh-client openssh-server
 $install vim
 $install ranger
+$install mlocate
 
 echo '-----------------------------------------------------------------------------------'
 echo 'opening put-windows web-page https://extensions.gnome.org/extension/39/put-windows/'
