@@ -2,8 +2,8 @@ install="apt install -y"
 
 # $install \
 
+$install kodi
 $install nmap
-$install 
 $install curl
 $install git
 $install terminator
