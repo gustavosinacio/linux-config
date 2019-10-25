@@ -1,0 +1,40 @@
+#!/bin/bash
+
+girInstalled=$(dpkg -l | grep gir1.2-wnck-3.0)
+
+
+[ "$girInstalled" == "" ] && sudo apt install -y gir1.2-wnck-3.0
+
+EXTENSIONS_REPOS=(
+  "https://extensions.gnome.org/extension-data/putWindowclemens.lab21.org.v26.shell-extension.zip"
+  "https://extensions.gnome.org/extension-data/gnome-shell-screenshotttll.de.v40.shell-extension.zip"
+  "https://extensions.gnome.org/extension-data/dash-to-dockmicxgx.gmail.com.v65.shell-extension.zip"
+  "https://extensions.gnome.org/extension-data/window-corner-previewfabiomereu.it.v4.shell-extension.zip"
+)
+
+
+for url in "${EXTENSIONS_REPOS[@]}"
+do
+  echo $url
+
+  FILENAME=$(basename "$url")
+
+  wget -q --show-progress -P ~/Downloads $url
+
+  EXTENSION=$(unzip -c ~/Downloads/*.shell-extension.zip metadata.json | grep uuid | cut -d \" -f4)
+  EXTENSION_LOC=~/.local/share/gnome-shell/extensions/$EXTENSION
+
+  for entry in "$search_dir"/*
+  do
+    echo "$entry"
+  done
+
+
+  mkdir -p $EXTENSION_LOC
+  unzip -q ~/Downloads/$FILENAME -d $EXTENSION_LOC
+
+  rm ~/Downloads/$FILENAME
+
+  gnome-shell-extension-tool -e $EXTENSION
+
+done
