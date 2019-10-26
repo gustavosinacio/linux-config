@@ -1,4 +1,5 @@
 ./set-keyboard-shortcuts
+./install-repos
 ./basic-configs
 ./net-tools
 sudo ./apt-installs
