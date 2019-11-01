@@ -1,0 +1,14 @@
+<keymap version="1" name="Default for GNOME copy" parent="Default for GNOME">
+  <action id="Help.KeymapReference">
+    <keyboard-shortcut first-keystroke="add" second-keystroke="add" />
+  </action>
+  <action id="Macro.format, indent, save">
+    <keyboard-shortcut first-keystroke="ctrl s" />
+  </action>
+  <action id="SaveAll">
+    <keyboard-shortcut first-keystroke="shift ctrl alt s" />
+  </action>
+  <action id="ToggleFullScreen">
+    <keyboard-shortcut first-keystroke="decimal" second-keystroke="decimal" />
+  </action>
+</keymap>

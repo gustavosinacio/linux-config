@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# import os
+
+# os.system("ls $LINUX_CONFIG_HOME/jetbrains/* \"$HOME/.PhpStorm*/config/keymaps/\"")
+# os.system("ls $HOME/.PhpStorm*/config/keymaps/*")
+
+pwd
+cd $HOME
+
+# os.system("[ -d  \"$HOME/.PhpStorm*/config/keymaps\" ] && echo 'exists'") 
+
+# os.system("rm $HOME/.PhpStorm*/config/keymaps/*")
+# os.system("ln $LINUX_CONFIG_HOME/jetbrains/* $HOME/.PhpStorm*/config/keymaps/")
+# os.system("ln $LINUX_CONFIG_HOME/jetbrains/* $HOME/.WebStorm*/config/keymaps/")
