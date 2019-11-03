@@ -2,5 +2,5 @@
 
 [ -f $HOME/.config/ranger/rc.conf ] && rm $HOME/.config/ranger/rc.conf && echo 'Removing existing rc.conf'
 
-ln -s $HOME/github/linux-config/ranger/rc.conf $HOME/.config/ranger/rc.conf && echo 'Linking new rc.conf'
+ln -s $LINUX_HOME_CONFIG/ranger/rc.conf $HOME/.config/ranger/rc.conf && echo 'Linking new rc.conf'
 

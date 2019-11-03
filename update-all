@@ -1,8 +1,8 @@
 #!/bin/bash
 
-CONFIG="$HOME/github/linux-config"
+export LINUX_HOME_CONFIG=$HOME/linux-config/
 
-cd $CONFIG
+cd $LINUX_HOME_CONFIG
 
 sudo git pull
 

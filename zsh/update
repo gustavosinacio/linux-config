@@ -2,5 +2,5 @@
 
 [ -f $HOME/.zshrc ] && rm $HOME/.zshrc && echo 'Removing existing zshrc'
 
-ln -s $HOME/github/linux-config/zsh/zshrc $HOME/.zshrc && echo 'Linking new zshrc'
+ln -s $LINUX_HOME_CONFIG/zsh/zshrc $HOME/.zshrc && echo 'Linking new zshrc'
 
