@@ -10,6 +10,7 @@ EXTENSIONS_REPOS=(
   "https://extensions.gnome.org/extension-data/gnome-shell-screenshotttll.de.v40.shell-extension.zip"
   "https://extensions.gnome.org/extension-data/dash-to-dockmicxgx.gmail.com.v65.shell-extension.zip"
   "https://extensions.gnome.org/extension-data/window-corner-previewfabiomereu.it.v4.shell-extension.zip"
+  "https://extensions.gnome.org/extension-data/system-monitorparadoxxx.zero.gmail.com.v38.shell-extension.zip"
 )
 
 
