@@ -2,4 +2,4 @@
 
 sudo add-apt-repository ppa:snwh/ppa 
 sudo apt-get update
-sudo apt-get install paper-icon-theme
+sudo apt install -y arc-theme numix-gtk-theme numix-icon-theme paper-icon-theme
