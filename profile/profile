@@ -23,8 +23,9 @@ PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 PATH="$HOME/github/bash-commands:$PATH"
 PATH="$HOME/.local-commands:$PATH"
 
-export LINUX_CONFIG_HOME=$HOME/github/linux-config
+export LINUX_CONFIG_HOME=$HOME/linux-config
 export git=$HOME/github
 export GIT=$HOME/github
 
 [ -f ~/.local_profile ] && source ~/.local_profile
+[ -f $LINUX_CONFIG_HOME/aliases ] && source $LINUX_CONFIG_HOME/aliases
