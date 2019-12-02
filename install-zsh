@@ -5,16 +5,16 @@ echo "install zsh"
 sudo apt install zsh -y
 
 echo "install oh-my-zsh------------------------------------"
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+# sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 echo "install zplugin--------------------------------------"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zplugin/master/doc/install.sh)"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zplugin/master/doc/install.sh)"
 
 echo "install spaceship theme------------------------------"
 
-local_repo=$HOME/.oh-my-zsh/custom/themes/spaceship-prompt
-
-git clone "https://github.com/denysdovhan/spaceship-prompt.git" $local_repo
-ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" $local_repo
+git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
+ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 
 echo "done -------------------------------------------------"

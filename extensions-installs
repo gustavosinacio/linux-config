@@ -4,6 +4,7 @@ girInstalled=$(dpkg -l | grep gir1.2-wnck-3.0)
 
 
 [ "$girInstalled" == "" ] && sudo apt install -y gir1.2-wnck-3.0
+sudo apt-get install -y gir1.2-gtop-2.0 gir1.2-clutter-1.0
 
 EXTENSIONS_REPOS=(
   "https://extensions.gnome.org/extension-data/putWindowclemens.lab21.org.v26.shell-extension.zip"

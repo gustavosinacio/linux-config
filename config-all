@@ -1,8 +1,10 @@
+sudo apt install -y curl git
+
 ./set-keyboard-shortcuts
 ./install-repos
 ./basic-configs
 ./net-tools
 sudo ./apt-installs
 ./other-downloads
-./update-all
 ./install-zsh
+./update-all
