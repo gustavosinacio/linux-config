@@ -1,6 +1,8 @@
 #!/bin/bash
 
 [ -f $HOME/.zshrc ] && rm $HOME/.zshrc && echo 'Removing existing zshrc'
+[ -f $HOME/.zsh_history ] && rm $HOME/.zsh_history && echo 'Removing existing zsh_history'
 
 ln -s $LINUX_CONFIG_HOME/zsh/zshrc $HOME/.zshrc && echo 'Linking new zshrc'
+ln -s $LINUX_CONFIG_HOME/zsh/.zsh_history $HOME/.zsh_history && echo 'Linking new zsh_history'
 
