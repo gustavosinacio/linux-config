@@ -16,3 +16,4 @@ sudo git pull
 
 ./wakatime/update
 
+./gitconfig/update
