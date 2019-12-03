@@ -1,0 +1,5 @@
+#!/bin/bash
+
+[ -f $HOME/.wakatime.cfg ] && rm $HOME/.wakatime.cfg && echo "Removing existing .wakatime.cfg"
+
+ln -s $LINUX_CONFIG_HOME/wakatime/wakatime.cfg $HOME/.wakatime.cfg && echo 'Linking new .wakatime.cfg'

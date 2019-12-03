@@ -1,8 +1,8 @@
 #!/bin/bash
 
-export LINUX_HOME_CONFIG=$HOME/linux-config/
+export LINUX_CONFIG_HOME=$HOME/linux-config/
 
-cd $LINUX_HOME_CONFIG
+cd $LINUX_CONFIG_HOME
 
 sudo git pull
 
@@ -13,3 +13,6 @@ sudo git pull
 ./profile/update
 
 ./vim/update
+
+./wakatime/update
+
