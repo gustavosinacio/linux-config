@@ -15,4 +15,6 @@ alias cfv='vim $HOME/github/linux-config/vim/vimrc'
 alias hours='python3 $GIT/hours/hours-calculation.py'
 
 # disk listing
-alias mdisk="sudo fdisk -l | grep 'Disk /dev/sd'"\
+alias mdisk="sudo fdisk -l | grep 'Disk /dev/sd'"
+
+alias gh="git logp"
