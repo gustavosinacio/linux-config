@@ -18,3 +18,4 @@ alias hours='python3 $GIT/hours/hours-calculation.py'
 alias mdisk="sudo fdisk -l | grep 'Disk /dev/sd'"
 
 alias gh="git logp"
+alias gpad="git push origin dev && git push server dev"
