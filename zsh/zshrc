@@ -137,4 +137,4 @@ SPACESHIP_CHAR_SUFFIX=" "
 # ----
 
 [ -f ~/.profile ] && source ~/.profile
-
+[ $LINUX_CONFIG_HOME/aliases ] && source $LINUX_CONFIG_HOME/aliases
