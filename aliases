@@ -19,3 +19,4 @@ alias mdisk="sudo fdisk -l | grep 'Disk /dev/sd'"
 
 alias gh="git logp"
 alias gpad="git push origin dev && git push server dev"
+alias gcobare="git symbolic-ref HEAD"
