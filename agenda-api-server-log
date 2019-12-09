@@ -1,2 +1,2 @@
 #!/bin/bash
-ssh root@$1 "cd /var/www/html/agenda-api-hooked/ && git --no-pager log -n 5 --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
+ssh root@$AGENDA "cd /var/www/html/agenda-api-hooked/ && git --no-pager log -n 5 --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
