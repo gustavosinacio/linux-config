@@ -9,5 +9,28 @@
 # fi
 
 
-[ -f ~/.profile ] && echo "Profile exists" 
+# [ -f ~/.profile ] && echo "Profile exists" 
 
+
+echo -e "\e[33m\e[5m\e[1m ---- YOU HAVE TO CONFIGURE YOURSELF: ----\e[0m
+  in \e[34m\e[4m/etc/apache2/sites-available/laravel_project.conf\e[0m:
+
+  \tServerAdmin [email]
+  \tServerName [name_to_put_in_etc_hosts]
+  \tServerAlias [www.name.dev]
+  \tDocumentRoot [/location/off/project/public]
+  \t
+  \t<Directory [/location/off/project/public/]>
+  \t.
+  \t.
+  \t.
+
+AND
+
+  in \e[34m\e[4m/etc/hosts\e[0m
+
+  127.0.0.1   [www.name.dev]
+"
+
+sudo a2ensite laravel_project.conf
+sudo a2dissite 000-default.conf

@@ -17,6 +17,12 @@ alias hours='python3 $GIT/hours/hours-calculation.py'
 # disk listing
 alias mdisk="sudo fdisk -l | grep 'Disk /dev/sd'"
 
+# git aliases
 alias gh="git logp"
 alias gpad="git push origin dev && git push server dev"
 alias gcobare="git symbolic-ref HEAD"
+
+# docker aliases
+alias dps="docker ps"
+alias dpsa="docker ps -a"
+alias drm="docker rm"

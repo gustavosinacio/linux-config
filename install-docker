@@ -4,9 +4,7 @@ echo "Configuring Docker CE ----------------------------------------------------
 
 desktop=$(env | grep XDG_CURRENT_DESKTOP | cut -d '=' -f 2)
 
-if [ $desktop == 'GNOME' ]; then
-
-  sudo apt-get remove docker docker-engine docker.io
+echo $desktop
 
   sudo apt install -y \
     apt-transport-https \
@@ -14,9 +12,10 @@ if [ $desktop == 'GNOME' ]; then
     curl \
     gnupg-agent \
     software-properties-common
-    
-    # sudo apt-get update
 
+  # sudo apt-get remove docker docker-engine docker.io
+
+if [ $desktop == 'GNOME' ]; then
     curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
 
     sudo add-apt-repository \
@@ -27,7 +26,26 @@ if [ $desktop == 'GNOME' ]; then
     sudo apt-get update
 
     sudo apt-get install docker-ce
+
+elif [ $desktop == 'ubuntu:GNOME' ]; then 
+  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
+  sudo add-apt-repository \
+  "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+  disco \
+  stable"
+
+  sudo apt-get update
+  sudo apt-get install docker-ce docker-ce-cli containerd.io
+
+  echo "Post installation to use docker without sudo ----"
+  sudo groupadd docker
+
+  sudo usermod -aG docker $USER
+
+  newgrp docker 
 fi
+
 
 
 # curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -

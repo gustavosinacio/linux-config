@@ -1,0 +1,46 @@
+#!/bin/bash
+
+sudo a2enmod rewrite
+sudo service apache2 restart
+sudo apachectl -t -D DUMP_MODULES | grep rewrite
+# should return rewrite_module (shared). 
+# If this is not returned, then some failure occurred with 
+# the installation or configuration of mod_rewrite extension.
+
+sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/laravel.conf
+
+echo -e "\e[33m\e[5m\e[1m ---- YOU HAVE TO CONFIGURE YOURSELF: ----\e[0m
+  \e[34m\e[4m/etc/apache2/sites-available/laravel_project.conf\e[0m
+AND
+  \e[34m\e[4m/etc/hosts\e[0m
+"
+
+sudo bash -c 'echo "NameVirtualHost *:8080
+Listen 8080
+
+<VirtualHost *:8080>
+  ServerAdmin admin@example.com
+  ServerName laravel.dev
+  ServerAlias www.laravel.dev
+  DocumentRoot /home/gustavo/projects/laravel_project/public
+
+  <Directory /home/gustavo/projects/laravel_project/public/>
+    Options Indexes FollowSymLinks MultiViews
+    AllowOverride All
+    Order allow,deny
+    allow from all
+    Require all granted
+  </Directory>
+
+  LogLevel debug
+  ErrorLog ${APACHE_LOG_DIR}/error.log
+  CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+" > /etc/apache2/sites-available/laravel_project.conf'
+
+sudo bash -c 'echo "
+127.0.0.1   laravel.dev
+" >> /etc/hosts'
+
+sudo a2ensite laravel_project.conf
+sudo a2dissite 000-default.conf

@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Tutorial found on: 
+# https://medium.com/@renato.groffe/postgresql-docker-executando-uma-inst%C3%A2ncia-e-o-pgadmin-4-a-partir-de-containers-ad783e85b1a4
+# works perfectly dec 10, 2019
+
+docker pull postgres
+
+docker network create --driver bridge postgres-network
+
+docker run \
+--name postgres \
+--network=postgres-network \
+-e "POSTGRES_PASSWORD=postgres" \
+-p 5432:5432 \
+-d postgres\
+
+# docker exec -it postgres psql -U postgres -c "CREATE DATABASE mydatabase;"

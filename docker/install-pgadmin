@@ -1,0 +1,11 @@
+#!/bin/bash
+
+docker pull dpage/pgadmin4
+
+docker run \
+--name pgadmin \
+--network=postgres-network \
+-p 15432:80 \
+-e "PGADMIN_DEFAULT_EMAIL=dockerpsql@email.com" \
+-e "PGADMIN_DEFAULT_PASSWORD=postgres" \
+-d dpage/pgadmin4
