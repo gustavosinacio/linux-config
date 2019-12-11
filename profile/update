@@ -2,6 +2,8 @@
 
 LINUX_CONFIG_HOME=$HOME/linux-config/
 
+[[ -d $HOME/.local-commands ]] || (mkdir $HOME/.local-commands && echo 'Creating ~/.local-commands')
+
 [ -f $HOME/.profile ] && rm $HOME/.profile && echo 'Removing existing .profile'
 
 ln -s $LINUX_CONFIG_HOME/profile/profile $HOME/.profile && echo 'Linking new .profile'
