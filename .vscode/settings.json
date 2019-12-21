@@ -1,5 +1,6 @@
 {
   "workbench.colorCustomizations": {
-    "statusBar.background": "#5f2914",
-  }
+    // "statusBar.background": "#5f2914",
+  },
+  // "peacock.color": "#5f2914"
 }
