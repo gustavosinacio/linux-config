@@ -2,4 +2,4 @@
 
 rm ~/.termux/termux.properties
 
-ln -s ~/github/linux-config/termux/termux.properties ~/.termux/termux.properties
+ln -s $LINUX_CONFIG_HOME/termux/termux.properties ~/.termux/termux.properties
