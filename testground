@@ -1,36 +1,41 @@
 #!/bin/bash
 
-# desktop=$(env | grep XDG_CURRENT_DESKTOP | cut -d '=' -f 2)
+d=293.665
+a=440.000
+f=349.228
+e=329.628
 
-# echo $desktop
-
-# if [ $desktop == 'GNOME' ]; then 
-#   echo 'WORK'
-# fi
-
-
-# [ -f ~/.profile ] && echo "Profile exists" 
+noteDuration=0.275 # 1/4
+noteInterval=0.4 # 3/4
+minorInterval=0.08
 
 
-echo -e "\e[33m\e[5m\e[1m ---- YOU HAVE TO CONFIGURE YOURSELF: ----\e[0m
-  in \e[34m\e[4m/etc/apache2/sites-available/laravel_project.conf\e[0m:
+(speaker-test -t sine -f $d -l 1 & sleep $noteDuration && kill -9 $!) > /dev/null &&\
+sleep $noteInterval &&\
+(speaker-test -t sine -f $a -l 1 & sleep $noteDuration && kill -9 $!) > /dev/null &&\
+sleep $noteInterval &&\
+(speaker-test -t sine -f $a -l 1 & sleep $noteDuration && kill -9 $!) > /dev/null &&\
+sleep $noteInterval &&\
+(speaker-test -t sine -f $f -l 1 & sleep $noteDuration && kill -9 $!) > /dev/null &&\
+sleep $noteInterval &&\
+(speaker-test -t sine -f $e -l 1 & sleep $noteDuration && kill -9 $!) > /dev/null &&\
+sleep $noteInterval &&\
+(speaker-test -t sine -f $e -l 1 & sleep $noteDuration && kill -9 $!) > /dev/null &&\
+sleep $noteInterval &&\
+(speaker-test -t sine -f $e -l 1 & sleep $noteDuration && kill -9 $!) > /dev/null &&\
+sleep $noteInterval &&\
 
-  \tServerAdmin [email]
-  \tServerName [name_to_put_in_etc_hosts]
-  \tServerAlias [www.name.dev]
-  \tDocumentRoot [/location/off/project/public]
-  \t
-  \t<Directory [/location/off/project/public/]>
-  \t.
-  \t.
-  \t.
+(speaker-test -t sine -f $e -l 1 & sleep $noteDuration && kill -9 $!) > /dev/null &&\
+sleep $minorInterval &&\
+(speaker-test -t sine -f $f -l 1 & sleep $noteDuration && kill -9 $!) > /dev/null &&\
+sleep $minorInterval &&\
+(speaker-test -t sine -f $d -l 1 & sleep $noteDuration && kill -9 $!) > /dev/null &&\
 
-AND
-
-  in \e[34m\e[4m/etc/hosts\e[0m
-
-  127.0.0.1   [www.name.dev]
-"
-
-sudo a2ensite laravel_project.conf
-sudo a2dissite 000-default.conf
+sleep $noteInterval &&\
+(speaker-test -t sine -f $a -l 1 & sleep $noteDuration && kill -9 $!) > /dev/null &&\
+sleep $noteInterval &&\
+(speaker-test -t sine -f $a -l 1 & sleep $noteDuration && kill -9 $!) > /dev/null &&\
+sleep $noteInterval &&\
+(speaker-test -t sine -f $f -l 1 & sleep $noteDuration && kill -9 $!) > /dev/null &&\
+sleep $noteInterval &&\
+(speaker-test -t sine -f $e -l 1 & sleep $noteDuration && kill -9 $!) > /dev/null
