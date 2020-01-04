@@ -5,4 +5,4 @@ sslstrip \
 ettercap-text-only \
 dsniff \
 openssh-client \
-openssh-server 
+openssh-server

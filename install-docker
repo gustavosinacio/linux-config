@@ -27,7 +27,7 @@ if [ $desktop == 'GNOME' ]; then
 
     sudo apt-get install docker-ce
 
-elif [ $desktop == 'ubuntu:GNOME' ]; then 
+elif [ $desktop == 'ubuntu:GNOME' ]; then
   curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
   sudo add-apt-repository \
@@ -43,7 +43,7 @@ elif [ $desktop == 'ubuntu:GNOME' ]; then
 
   sudo usermod -aG docker $USER
 
-  newgrp docker 
+  newgrp docker
 fi
 
 sudo curl -L "https://github.com/docker/compose/releases/download/1.25.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose

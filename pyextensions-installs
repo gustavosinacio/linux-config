@@ -12,10 +12,10 @@ result = subprocess.run(['basename', url], stdout=subprocess.PIPE).stdout.decode
 print(result.strip())
 
 extensions_repos = [
-  "https://extensions.gnome.org/extension-data/putWindowclemens.lab21.org.v26.shell-extension.zip", 
-  "https://extensions.gnome.org/extension-data/gnome-shell-screenshotttll.de.v40.shell-extension.zip", 
-  "https://extensions.gnome.org/extension-data/dash-to-dockmicxgx.gmail.com.v65.shell-extension.zip", 
-  "https://extensions.gnome.org/extension-data/window-corner-previewfabiomereu.it.v4.shell-extension.zip", 
+  "https://extensions.gnome.org/extension-data/putWindowclemens.lab21.org.v26.shell-extension.zip",
+  "https://extensions.gnome.org/extension-data/gnome-shell-screenshotttll.de.v40.shell-extension.zip",
+  "https://extensions.gnome.org/extension-data/dash-to-dockmicxgx.gmail.com.v65.shell-extension.zip",
+  "https://extensions.gnome.org/extension-data/window-corner-previewfabiomereu.it.v4.shell-extension.zip",
 ]
 
 extension_names = [

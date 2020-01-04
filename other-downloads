@@ -4,7 +4,7 @@ unzip *.zip -d fira #->> => => <->
 
 mkdir ~/.fonts
 
-cp fira/ttf/* ~/.fonts 
+cp fira/ttf/* ~/.fonts
 
 fc-cache -f -v
 

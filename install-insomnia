@@ -11,4 +11,4 @@ wget --quiet -O - https://insomnia.rest/keys/debian-public.key.asc \
 
 # Refresh repository sources and install Insomnia
 sudo apt update
-sudo apt install insomnia -y 
+sudo apt install insomnia -y

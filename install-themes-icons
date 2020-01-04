@@ -1,5 +1,5 @@
 #!/bin/bash
 
-sudo add-apt-repository ppa:snwh/ppa 
+sudo add-apt-repository ppa:snwh/ppa
 sudo apt-get update
 sudo apt install -y arc-theme numix-gtk-theme numix-icon-theme paper-icon-theme
