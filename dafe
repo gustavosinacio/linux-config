@@ -1,0 +1,41 @@
+#!/bin/bash
+
+d=293.665
+a=440.000
+f=349.228
+e=329.628
+
+noteDuration=0.275 # 1/4
+noteInterval=0.275 # 3/4
+minorInterval=0
+
+
+(speaker-test -t sine -f $d -l 1 & sleep $noteDuration && kill -9 $!) > /dev/null &&\
+sleep $noteInterval &&\
+(speaker-test -t sine -f $a -l 1 & sleep $noteDuration && kill -9 $!) > /dev/null &&\
+sleep $noteInterval &&\
+(speaker-test -t sine -f $a -l 1 & sleep $noteDuration && kill -9 $!) > /dev/null &&\
+sleep $noteInterval &&\
+(speaker-test -t sine -f $f -l 1 & sleep $noteDuration && kill -9 $!) > /dev/null &&\
+sleep $noteInterval &&\
+(speaker-test -t sine -f $e -l 1 & sleep $noteDuration && kill -9 $!) > /dev/null &&\
+sleep $noteInterval &&\
+(speaker-test -t sine -f $e -l 1 & sleep $noteDuration && kill -9 $!) > /dev/null &&\
+sleep $noteInterval &&\
+(speaker-test -t sine -f $e -l 1 & sleep $noteDuration && kill -9 $!) > /dev/null &&\
+sleep $noteInterval &&\
+
+(speaker-test -t sine -f $e -l 1 & sleep $noteDuration && kill -9 $!) > /dev/null &&\
+sleep $minorInterval &&\
+(speaker-test -t sine -f $f -l 1 & sleep $noteDuration && kill -9 $!) > /dev/null &&\
+sleep $minorInterval &&\
+(speaker-test -t sine -f $d -l 1 & sleep $noteDuration && kill -9 $!) > /dev/null &&\
+
+sleep $noteInterval &&\
+(speaker-test -t sine -f $a -l 1 & sleep $noteDuration && kill -9 $!) > /dev/null &&\
+sleep $noteInterval &&\
+(speaker-test -t sine -f $a -l 1 & sleep $noteDuration && kill -9 $!) > /dev/null &&\
+sleep $noteInterval &&\
+(speaker-test -t sine -f $f -l 1 & sleep $noteDuration && kill -9 $!) > /dev/null &&\
+sleep $noteInterval &&\
+(speaker-test -t sine -f $e -l 1 & sleep $noteDuration && kill -9 $!) > /dev/null
