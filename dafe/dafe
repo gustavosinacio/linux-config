@@ -1,16 +1,16 @@
 #!/bin/bash
 
+# ---- Piano notes source
+# http://theremin.music.uiowa.edu/MISpiano.html
+
+# ---- Files need to be wav. Coverter:
+# https://www.media.io/br/
+
+
 d4='D4.wav'
 a4='A4.wav'
 f4='F4.wav'
 e4='E4.wav'
-
-noteDuration=0.275 # 1/4
-# noteInterval=0.275 # 3/4
-# minorInterval=0
-
-noteInterval=1 # 3/4
-minorInterval=0.6
 
 timeD4A4=1
 timeA4A4=0.8
