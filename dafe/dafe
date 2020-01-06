@@ -6,6 +6,9 @@
 # ---- Files need to be wav. Coverter:
 # https://www.media.io/br/
 
+# play is a command from the sox library
+# sudo apt install sox
+
 
 d4='D4.wav'
 a4='A4.wav'
@@ -21,23 +24,23 @@ timeE4E4=0.8
 minorTimeE4F4=0.28
 minorTimeF4D4=0.44
 
-aplay $d4 &
+timeout 6s play $d4 &
 sleep $timeD4A4
-aplay $a4 &
+timeout 6s play $a4 &
 sleep $timeA4A4
-aplay $a4 &
+timeout 6s play $a4 &
 sleep $timeA4F4
-aplay $f4 &
+timeout 6s play $f4 &
 sleep $timeD4A4
-aplay $e4 &
+timeout 6s play $e4 &
 sleep $timeE4E4
-aplay $e4 &
+timeout 6s play $e4 &
 sleep $timeE4E4
-aplay $e4 &
+timeout 6s play $e4 &
 sleep $timeE4E4
 
-aplay $e4 &
+timeout 6s play $e4 &
 sleep $minorTimeE4F4
-aplay $f4 &
+timeout 6s play $f4 &
 sleep $minorTimeF4D4
-aplay $d4 &
+timeout 6s play $d4 &
