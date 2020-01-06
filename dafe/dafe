@@ -28,7 +28,7 @@ sleep $timeA4A4
 aplay $a4 &
 sleep $timeA4F4
 aplay $f4 &
-sleep $noteInterval
+sleep $timeD4A4
 aplay $e4 &
 sleep $timeE4E4
 aplay $e4 &
