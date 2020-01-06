@@ -1,0 +1,43 @@
+#!/bin/bash
+
+d4='D4.wav'
+a4='A4.wav'
+f4='F4.wav'
+e4='E4.wav'
+
+noteDuration=0.275 # 1/4
+# noteInterval=0.275 # 3/4
+# minorInterval=0
+
+noteInterval=1 # 3/4
+minorInterval=0.6
+
+timeD4A4=1
+timeA4A4=0.8
+timeA4F4=0.6
+timeF4E4=1
+timeE4E4=0.8
+
+minorTimeE4F4=0.28
+minorTimeF4D4=0.44
+
+aplay $d4 &
+sleep $timeD4A4
+aplay $a4 &
+sleep $timeA4A4
+aplay $a4 &
+sleep $timeA4F4
+aplay $f4 &
+sleep $noteInterval
+aplay $e4 &
+sleep $timeE4E4
+aplay $e4 &
+sleep $timeE4E4
+aplay $e4 &
+sleep $timeE4E4
+
+aplay $e4 &
+sleep $minorTimeE4F4
+aplay $f4 &
+sleep $minorTimeF4D4
+aplay $d4 &
