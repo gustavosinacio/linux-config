@@ -9,38 +9,11 @@
 # play is a command from the sox library
 # sudo apt install sox
 
-
 d4='D4.wav'
 a4='A4.wav'
 f4='F4.wav'
 e4='E4.wav'
 
-timeD4A4=1
-timeA4A4=0.8
-timeA4F4=0.6
-timeF4E4=1
-timeE4E4=0.8
-
-minorTimeE4F4=0.28
-minorTimeF4D4=0.44
-
 timeout 6s play $d4 &
-sleep $timeD4A4
-timeout 6s play $a4 &
-sleep $timeA4A4
-timeout 6s play $a4 &
-sleep $timeA4F4
-timeout 6s play $f4 &
-sleep $timeD4A4
-timeout 6s play $e4 &
-sleep $timeE4E4
-timeout 6s play $e4 &
-sleep $timeE4E4
-timeout 6s play $e4 &
-sleep $timeE4E4
 
-timeout 6s play $e4 &
-sleep $minorTimeE4F4
-timeout 6s play $f4 &
-sleep $minorTimeF4D4
-timeout 6s play $d4 &
+./dafe-main && ./dafe-main && ./dafe-main
