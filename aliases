@@ -33,3 +33,7 @@ alias db="docker build"
 alias dl="docker logs"
 alias dn="docker network"
 alias de="docker exec -it"
+
+# react-native aliases
+alias rnra="react-native run-android"
+alias rns="react-native start"
