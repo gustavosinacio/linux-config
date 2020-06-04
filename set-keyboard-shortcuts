@@ -6,7 +6,7 @@ desktop=$(env | grep XDG_CURRENT_DESKTOP | cut -d '=' -f 2)
 
 if [ $desktop == 'GNOME' ] || [ $desktop == 'ubuntu:GNOME' ]; then
 
-  sudo apt install gir1.2-gtop-2.0 gir1.2-networkmanager-1.0
+  sudo apt install gir1.2-gtop-2.0 gir1.2-nm-1.0
 
   gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings \
   "[\
